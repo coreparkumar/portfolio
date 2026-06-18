@@ -1,0 +1,629 @@
+---
+layout: default
+title: "coreparkumar — Project Portfolio"
+description: "5 projects built around privacy, local AI, and developer autonomy."
+---
+
+<!-- Background data stream canvas -->
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+<!-- ── NAV ───────────────────────────────────────────────────────── -->
+<nav class="nav" aria-label="Primary navigation">
+  <div class="nav-brand">~/coreparkumar</div>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#themes">Themes</a></li>
+    <li><a href="#evolution">Evolution</a></li>
+    <li><a href="#verdicts">Verdicts</a></li>
+    <li><a href="https://github.com/coreparkumar" target="_blank" rel="noopener">GitHub ↗</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────────────────── -->
+<header class="hero" id="home">
+  <div class="hero-eyebrow">github.com/coreparkumar</div>
+
+  <h1 class="hero-title">
+    Building for<br>
+    <span class="highlight"><span id="typed-tag">privacy by default.</span></span>
+    <span class="cursor" aria-hidden="true"></span>
+  </h1>
+
+  <p class="hero-sub">
+    Five projects. One conviction: the best software returns control to the person running it —
+    no subscription gates, no data leaving your machine, no hidden extractors.
+  </p>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">5</span>
+      <span class="stat-label">Projects</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">Privacy Tools</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2</span>
+      <span class="stat-label">Local AI Apps</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">$0</span>
+      <span class="stat-label">Cloud API Cost</span>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+    <a href="https://github.com/coreparkumar" target="_blank" rel="noopener" class="btn btn-ghost">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      View on GitHub
+    </a>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="scroll-line"></span>
+    scroll
+  </div>
+</header>
+
+<!-- ── PROJECTS ──────────────────────────────────────────────────── -->
+<section class="section" id="projects">
+  <div class="section-label">The Work</div>
+  <h2 class="section-title">Five Projects</h2>
+  <p class="section-desc">
+    Click any project to expand the full analysis — problem, audience, stack, philosophy, and hidden details.
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- ── P1: LocalVocal ── -->
+    <article class="project-card reveal" data-project="1">
+      <div class="card-inner">
+        <div class="card-spine" style="background: #00E5FF;"></div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-icon">🖥️</div>
+            <div class="card-meta">
+              <div class="card-category" style="color:#00E5FF;">Developer Tooling</div>
+              <div class="card-title">LocalVocal</div>
+              <div class="card-tagline">Your own coding AI on 6 GB of VRAM — free, private, fully local</div>
+            </div>
+            <div class="card-toggle" aria-label="Expand project details">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-detail">
+        <div class="detail-divider"></div>
+        <div class="detail-grid">
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🔧</span> Problem Solved</div>
+            <p class="detail-text">
+              Cloud coding assistants cost money every month and route your source code through
+              someone else's servers. LocalVocal removes both barriers — a complete interactive
+              guide to run a private, $0 AI coding assistant on a 6 GB NVIDIA laptop GPU in about
+              fifteen minutes.
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">👥</span> Who It's For</div>
+            <ul class="detail-list">
+              <li>Developers who want Copilot-style help without a subscription</li>
+              <li>Anyone with sensitive or proprietary code</li>
+              <li>People on modest GPUs (6–8 GB) who assume local AI is out of reach</li>
+              <li>Tinkerers who want to own their entire stack</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🛠️</span> Tech Stack</div>
+            <div class="tech-pills">
+              <span class="pill">Ollama</span>
+              <span class="pill">Qwen2.5-Coder:7b</span>
+              <span class="pill">Qwen2.5-Coder:1.5b</span>
+              <span class="pill">nomic-embed-text</span>
+              <span class="pill">Continue (VS Code)</span>
+              <span class="pill">Cline</span>
+              <span class="pill">Gemini 2.5-Flash</span>
+              <span class="pill">Vanilla HTML</span>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">💡</span> Philosophy</div>
+            <p class="detail-text">
+              Privacy by default and zero-cost by design. The single-file HTML delivery is itself
+              a statement: no frameworks, no npm install, no cloud dependency. Local RAG with
+              nomic-embed-text means cloud calls (when made) send a few hundred tokens, not whole files.
+            </p>
+          </div>
+          <div class="detail-block" style="grid-column: 1 / -1;">
+            <div class="detail-label"><span class="ico">✨</span> Hidden Details</div>
+            <ul class="detail-list">
+              <li>Embedded VRAM budget visualizer shows GPU headroom in real time</li>
+              <li>Gemini panel is pre-primed with the user's exact hardware context — off-script questions get grounded answers</li>
+              <li>Bridges the "AI is only for expensive hardware" perception gap — a social accessibility angle in technical clothing</li>
+              <li>Doubles as a reusable template — anyone can fork the HTML and adapt it for a different GPU target</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/coreparkumar/LocalVocal" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            coreparkumar/LocalVocal
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── P2: Know-ur-phone ── -->
+    <article class="project-card reveal" data-project="2">
+      <div class="card-inner">
+        <div class="card-spine" style="background: #FFB703;"></div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-icon">📱</div>
+            <div class="card-meta">
+              <div class="card-category" style="color:#FFB703;">Digital Privacy</div>
+              <div class="card-title">Know-ur-phone</div>
+              <div class="card-tagline">Safeguard your phone from data leaks, ghost apps, and old app data</div>
+            </div>
+            <div class="card-toggle" aria-label="Expand project details">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-detail">
+        <div class="detail-divider"></div>
+        <div class="detail-grid">
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🔧</span> Problem Solved</div>
+            <p class="detail-text">
+              Most users are unaware of ghost apps (uninstalled apps that leave residual data
+              and permissions) and stale trackers still exposing personal information. This is a
+              plain-English digital hygiene guide — raising awareness and directing action,
+              without any server-side irony.
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">👥</span> Who It's For</div>
+            <ul class="detail-list">
+              <li>Non-technical smartphone users who want to understand data exposure</li>
+              <li>Privacy-conscious users who suspect apps do more than they should</li>
+              <li>Parents and educators looking for digestible mobile hygiene resources</li>
+              <li>Anyone who uninstalled an app but never thought about leftover data</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🛠️</span> Tech Stack</div>
+            <div class="tech-pills">
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">Vanilla JS</span>
+              <span class="pill">GitHub Pages</span>
+              <span class="pill">Google Forms</span>
+              <span class="pill">Formspree</span>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">💡</span> Philosophy</div>
+            <p class="detail-text">
+              Education before action. The site is deliberately static with no server-side
+              tracking — no analytics backdoor, no irony. The modular form provider approach
+              demonstrates progressive enhancement: start free, swap providers as needs grow.
+            </p>
+          </div>
+          <div class="detail-block" style="grid-column: 1 / -1;">
+            <div class="detail-label"><span class="ico">✨</span> Hidden Details</div>
+            <ul class="detail-list">
+              <li>Ghost app prevention is an underexplored consumer problem — first-mover awareness value in that niche</li>
+              <li>Designed to double as a lead-gen funnel — product thinking embedded in an educational wrapper</li>
+              <li>Natural companion to AuditAd: Know-ur-phone educates, AuditAd acts</li>
+              <li>The practice what you preach angle: a static site with no tracking teaches privacy, without being hypocritical</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/coreparkumar/Know-ur-phone" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            coreparkumar/Know-ur-phone
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── P3: AuditAd ── -->
+    <article class="project-card reveal" data-project="3">
+      <div class="card-inner">
+        <div class="card-spine" style="background: #0CF574;"></div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-icon">🛡️</div>
+            <div class="card-meta">
+              <div class="card-category" style="color:#0CF574;">Mobile Privacy</div>
+              <div class="card-title">AuditAd</div>
+              <div class="card-tagline">Local DNS threat optimizer and privacy audit utility for Android</div>
+            </div>
+            <div class="card-toggle" aria-label="Expand project details">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-detail">
+        <div class="detail-divider"></div>
+        <div class="detail-grid">
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🔧</span> Problem Solved</div>
+            <p class="detail-text">
+              Android apps engage in a hidden economy of cross-app profiling and background data
+              harvesting. Existing solutions route traffic through third-party VPN servers (a new
+              privacy risk) or require root access. AuditAd uses a local DNS loopback on Port 53 —
+              entirely on-device, with no data sent externally.
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">👥</span> Who It's For</div>
+            <ul class="detail-list">
+              <li>Privacy-conscious Android users wanting visibility into app telemetry</li>
+              <li>Security researchers and mobile developers auditing permissions</li>
+              <li>Developers who want to audit their own manifest before publishing</li>
+              <li>Users who want to neutralise cross-app profiling without rooting</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🛠️</span> Tech Stack</div>
+            <div class="tech-pills">
+              <span class="pill">React 19</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Vite</span>
+              <span class="pill">Tailwind CSS</span>
+              <span class="pill">Capacitor 6</span>
+              <span class="pill">Java (native plugin)</span>
+              <span class="pill">Gemini API</span>
+              <span class="pill">Bloom Filter</span>
+              <span class="pill">Express</span>
+              <span class="pill">Vercel</span>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">💡</span> Philosophy</div>
+            <p class="detail-text">
+              Zero-knowledge, on-device. The Bloom Filter architecture checks 150,000+ domains
+              in sub-millisecond time, entirely in-kernel. "Trust but verify" becomes "verify,
+              then trust." The interactive Bloom Filter Playground is a transparency mechanism
+              that shows users exactly how the matching engine works.
+            </p>
+          </div>
+          <div class="detail-block" style="grid-column: 1 / -1;">
+            <div class="detail-label"><span class="ico">✨</span> Hidden Details</div>
+            <ul class="detail-list">
+              <li>Bloom Filter Playground: an interactive CS education tool inside a consumer privacy app — users tune m, n, k parameters and see real false-positive probabilities</li>
+              <li>64-bit memory grid visualises how trackers "flip bits" — abstract algorithm made visceral for non-technical users</li>
+              <li>Package Auditor with Gemini AI risk scoring is a developer-facing feature tucked into a consumer app — clever dual-audience design</li>
+              <li>Most technically ambitious project in the portfolio: Capacitor Java bridge, custom AppCheckPlugin, Bloom Filter, and Gemini AI all working in concert</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/coreparkumar/auditad" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            coreparkumar/auditad
+          </a>
+          <a href="https://auditad.vercel.app" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            auditad.vercel.app ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── P4: PromptOS ── -->
+    <article class="project-card reveal" data-project="4">
+      <div class="card-inner">
+        <div class="card-spine" style="background: #BD83FE;"></div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-icon">🧠</div>
+            <div class="card-meta">
+              <div class="card-category" style="color:#BD83FE;">AI Productivity</div>
+              <div class="card-title">PromptOS</div>
+              <div class="card-tagline">An app to define prompts as skills, rules, and boundaries</div>
+            </div>
+            <div class="card-toggle" aria-label="Expand project details">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-detail">
+        <div class="detail-divider"></div>
+        <div class="detail-grid">
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🔧</span> Problem Solved</div>
+            <p class="detail-text">
+              AI prompts are treated as throwaway one-liners rather than reusable professional assets.
+              Without structure, teams rewrite the same prompts from scratch, get inconsistent AI
+              behaviour, and lose institutional knowledge. PromptOS frames prompts as structured
+              artefacts: skills, rules, and boundaries — versioned in a repo, native to your workflow.
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">👥</span> Who It's For</div>
+            <ul class="detail-list">
+              <li>Developers and AI engineers who want to manage prompts as code</li>
+              <li>Teams building LLM-powered products needing consistent AI behaviour</li>
+              <li>Prompt engineers tired of reinventing the wheel each project</li>
+              <li>Agent builders who want a structured skill/boundary framework</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🛠️</span> Tech Stack</div>
+            <div class="tech-pills">
+              <span class="pill">VS Code Workspace</span>
+              <span class="pill">.ai/ folder convention</span>
+              <span class="pill">Model-agnostic</span>
+              <span class="pill">File-system native</span>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">💡</span> Philosophy</div>
+            <p class="detail-text">
+              Prompts as first-class software artefacts. The skills/rules/boundaries taxonomy
+              mirrors AI alignment thinking — capabilities, constraints, guardrails. Encoded in
+              files in a repo, it fits any workflow without a new platform. "If it lives in your
+              repo, it lives in your workflow."
+            </p>
+          </div>
+          <div class="detail-block" style="grid-column: 1 / -1;">
+            <div class="detail-label"><span class="ico">✨</span> Hidden Details</div>
+            <ul class="detail-list">
+              <li>The .ai/ folder convention is an elegant, unopinionated primitive — any editor, CI, or LLM can consume it without knowing PromptOS exists</li>
+              <li>The skills/rules/boundaries taxonomy maps to how modern LLM system prompts work — the creator may have drawn from AI safety alignment thinking</li>
+              <li>Earliest repo chronologically — likely the philosophical seed idea that spawned LocalVocal, AuditAd, and MegaMind</li>
+              <li>Significant potential as a VS Code extension or CLI tool — the conceptual groundwork is already there</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/coreparkumar/PromptOS" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            coreparkumar/PromptOS
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── P5: MegaMind ── -->
+    <article class="project-card reveal" data-project="5">
+      <div class="card-inner">
+        <div class="card-spine" style="background: #FF6B6B;"></div>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="card-icon">✍️</div>
+            <div class="card-meta">
+              <div class="card-category" style="color:#FF6B6B;">AI Content Creation</div>
+              <div class="card-title">MegaMind Content Studio</div>
+              <div class="card-tagline">Local-first AI studio — turn rough ideas into polished posts</div>
+            </div>
+            <div class="card-toggle" aria-label="Expand project details">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-detail">
+        <div class="detail-divider"></div>
+        <div class="detail-grid">
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🔧</span> Problem Solved</div>
+            <p class="detail-text">
+              Most AI writing tools are cloud-dependent, per-token-billed, and treat content
+              generation as a single-shot prompt. MegaMind is built around a production pipeline:
+              research, draft, reformat for a specific platform, export — entirely local. Two
+              modes: an interactive Electron UI, and a headless folder-watcher service.
+            </p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">👥</span> Who It's For</div>
+            <ul class="detail-list">
+              <li>Content creators, LinkedIn influencers, and solopreneurs with high content volume</li>
+              <li>Developers who want a local AI writing pipeline without per-token API costs</li>
+              <li>Storytellers and comic-narrative creators (first-class use case)</li>
+              <li>Windows power users who prefer folder-based automation over SaaS dashboards</li>
+            </ul>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">🛠️</span> Tech Stack</div>
+            <div class="tech-pills">
+              <span class="pill">Electron 37</span>
+              <span class="pill">FastAPI (Python)</span>
+              <span class="pill">Ollama</span>
+              <span class="pill">storyteller model</span>
+              <span class="pill">Python worker</span>
+              <span class="pill">Batch scripts</span>
+              <span class="pill">.env config</span>
+            </div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label"><span class="ico">💡</span> Philosophy</div>
+            <p class="detail-text">
+              Content creation as a production process, not a conversation. Clean split between
+              generation and formatting stages — separation of concerns, explicit API contracts
+              (FastAPI schemas), observable state (service logs, manifests). The folder-service
+              contract echoes Unix pipe philosophy: drop a job in, pick up a finished artefact.
+            </p>
+          </div>
+          <div class="detail-block" style="grid-column: 1 / -1;">
+            <div class="detail-label"><span class="ico">✨</span> Hidden Details</div>
+            <ul class="detail-list">
+              <li>Dual-mode architecture (interactive UI vs headless folder service) respects two very different human workflows: creative and automated</li>
+              <li>The 'storyteller' default model and comic-style job examples reveal a creative writing ambition beyond business content — could serve indie game writers and comic creators</li>
+              <li>worthifyme.com domain link suggests a larger brand vision — the content studio is the engine of a broader creator economy play</li>
+              <li>Most production-ready project: published release (v1), CHECKSUMS.txt for integrity verification, proper release notes — mature software distribution thinking</li>
+              <li>The folder-service contract design mirrors enterprise ETL pipeline patterns (a Pentaho/PDI influence leaking into indie software — pattern transfer at its finest)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/coreparkumar/MegaMind-Content-Studio-Release" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            coreparkumar/MegaMind-Content-Studio-Release
+          </a>
+          <a href="https://worthifyme.com" target="_blank" rel="noopener" class="card-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            worthifyme.com ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── THEMES ────────────────────────────────────────────────────── -->
+<section class="section" id="themes">
+  <div class="section-label">Cross-Portfolio Analysis</div>
+  <h2 class="section-title">Unifying Themes</h2>
+  <p class="section-desc">
+    Five projects, one worldview. Every project either removes a cloud dependency, adds
+    transparency to a hidden process, or returns control to the person running the software.
+  </p>
+
+  <div class="themes-grid">
+    <div class="theme-card">
+      <div class="theme-icon">🔒</div>
+      <div class="theme-name">Privacy as First-Class Feature</div>
+      <p class="theme-text">
+        Three of five projects (Know-ur-phone, AuditAd, LocalVocal) are directly concerned with
+        data privacy. This is not a coincidence — it reflects a deep conviction about digital
+        sovereignty. AuditAd is the most technically ambitious expression; Know-ur-phone shows
+        the creator also thinks about the non-technical user who needs education, not just tooling.
+      </p>
+    </div>
+    <div class="theme-card">
+      <div class="theme-icon">🏠</div>
+      <div class="theme-name">Local-First AI</div>
+      <p class="theme-text">
+        LocalVocal and MegaMind Content Studio both run entirely on local Ollama models.
+        PromptOS is model-agnostic but file-system-native. A clear preference for on-device
+        inference over cloud APIs — subscription-free, API-bill-free, perpetually yours.
+      </p>
+    </div>
+    <div class="theme-card">
+      <div class="theme-icon">📄</div>
+      <div class="theme-name">Single-File HTML as Delivery Primitive</div>
+      <p class="theme-text">
+        LocalVocal and Know-ur-phone both deliver as single-page static HTML. Maximum portability,
+        zero dependencies, open-on-disk. This engineering aesthetic echoes the Unix philosophy:
+        simple, composable, self-contained tools that work without installation.
+      </p>
+    </div>
+    <div class="theme-card">
+      <div class="theme-icon">🌱</div>
+      <div class="theme-name">PromptOS as the Philosophical Parent</div>
+      <p class="theme-text">
+        The earliest repo in the portfolio by commit history. The skills/rules/boundaries taxonomy
+        in PromptOS likely predates and seeds every other project — it's the abstract model
+        that LocalVocal, AuditAd, and MegaMind are concrete implementations of.
+      </p>
+    </div>
+    <div class="theme-card">
+      <div class="theme-icon">🔄</div>
+      <div class="theme-name">Enterprise Patterns in Indie Software</div>
+      <p class="theme-text">
+        MegaMind's folder-service contract mirrors Pentaho/PDI ETL pipeline patterns.
+        AuditAd's Bloom Filter is database-index thinking applied to consumer privacy.
+        Enterprise pattern transfer into personal projects — professional experience
+        compressed into weekend code.
+      </p>
+    </div>
+    <div class="theme-card">
+      <div class="theme-icon">📈</div>
+      <div class="theme-name">Progressive Maturity</div>
+      <p class="theme-text">
+        The portfolio shows a clear arc: from conceptual scaffold (PromptOS) → educational
+        landing page (Know-ur-phone) → interactive guide (LocalVocal) → full PWA + native app
+        (AuditAd) → released desktop product with checksums and release notes (MegaMind).
+        Each project is more production-ready than the last.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── EVOLUTION TIMELINE ────────────────────────────────────────── -->
+<section class="section" id="evolution">
+  <div class="section-label">Project Arc</div>
+  <h2 class="section-title">Evolution</h2>
+  <p class="section-desc">From concept to released product — a clear maturity arc across the portfolio.</p>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-stage">Seed · Concept</div>
+      <div class="timeline-name">PromptOS</div>
+      <div class="timeline-signal">VS Code workspace + .ai folder convention · 2 commits · philosophical scaffold for everything that follows</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-stage">Landing Page · MVP</div>
+      <div class="timeline-name">Know-ur-phone</div>
+      <div class="timeline-signal">Static HTML/CSS/JS · GitHub Pages · lead-gen funnel with a privacy education mission</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-stage">Interactive Guide · App</div>
+      <div class="timeline-name">LocalVocal</div>
+      <div class="timeline-signal">Single-file HTML application · embedded Gemini Q&A · VRAM budget visualizer · 6 commits</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-stage">Full App · PWA + Android</div>
+      <div class="timeline-name">AuditAd</div>
+      <div class="timeline-signal">React 19 + Capacitor + Java native plugin + Vercel deployment · 15 commits · most technically ambitious</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-stage">Released Product</div>
+      <div class="timeline-name">MegaMind Content Studio</div>
+      <div class="timeline-signal">Electron + FastAPI + Ollama · published Release v1 · CHECKSUMS.txt · proper release notes · worthifyme.com</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── VERDICTS ──────────────────────────────────────────────────── -->
+<section class="section" id="verdicts">
+  <div class="section-label">One-Line Verdicts</div>
+  <h2 class="section-title">In a Sentence</h2>
+  <p class="section-desc">The sharpest distillation of what each project really is.</p>
+
+  <div class="verdict-list">
+    <div class="verdict-item">
+      <span class="verdict-name">🖥️ LocalVocal</span>
+      <span class="verdict-text">The developer manifesto — code privately, spend nothing.</span>
+    </div>
+    <div class="verdict-item">
+      <span class="verdict-name">📱 Know-ur-phone</span>
+      <span class="verdict-text">The awareness seed — privacy education for the non-technical user.</span>
+    </div>
+    <div class="verdict-item">
+      <span class="verdict-name">🛡️ AuditAd</span>
+      <span class="verdict-text">The most technically ambitious — a Bloom Filter, a DNS loopback, and Gemini AI in one Android app.</span>
+    </div>
+    <div class="verdict-item">
+      <span class="verdict-name">🧠 PromptOS</span>
+      <span class="verdict-text">The philosophical parent — prompts as software artefacts, the idea everything else builds on.</span>
+    </div>
+    <div class="verdict-item">
+      <span class="verdict-name">✍️ MegaMind Studio</span>
+      <span class="verdict-text">The most production-ready — a real content pipeline engine with a release, checksums, and a domain.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-brand">
+    <span>~/coreparkumar</span> · built with conviction
+  </div>
+  <div class="footer-note">
+    Analysis generated · github.com/coreparkumar · June 2026
+  </div>
+</footer>
