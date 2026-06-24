@@ -2,16 +2,13 @@ title: "coreparkumar — Project Portfolio"
 description: "5 projects built around privacy, local AI, and developer autonomy."
 author: coreparkumar
 baseurl: "/no-leak-loki"
-url: "https://coreparkumar.github.io/no-leak-loki/"
+url: "https://coreparkumar.github.io"
 
-# Build settings
 markdown: kramdown
 theme: null
 plugins: []
 
-# Exclude from build
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - node_modules
