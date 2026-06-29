@@ -750,7 +750,7 @@ img { max-width: 100%; }
   </style>
 </head>
 <body>
-
+<div id="social-bar-wrapper" data-config="./social-config.json"></div>
 <!-- Background data stream canvas -->
 <canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
@@ -1368,5 +1368,9 @@ document.querySelectorAll('.timeline-item').forEach((el, i) => {
   sections.forEach(s => obs.observe(s));
 })();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <script src="./social-bar.js"></script>
+</body>
 </body>
 </html>

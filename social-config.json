@@ -1,0 +1,45 @@
+{
+  "theme": "light",
+  "placement": "bottom",
+  "lineStyle": {
+    "width": "1px",
+    "style": "solid",
+    "color": "#ddd"
+  },
+  "socials": [
+    { 
+      "name": "Email", 
+      "url": "mailto:Parkumar.official@gmail.com", 
+      "icon": { "type": "fa", "value": "fa-solid fa-envelope" } 
+    },
+    { 
+      "name": "Exp Profile", 
+      "url": "https://bold.pro/my/par-kumar", 
+      "icon": { "type": "fa", "value": "fa-solid fa-briefcase" } 
+    },
+    { 
+      "name": "Hashnode", 
+      "url": "https://hashnode.com/@blockster", 
+      "icon": { "type": "fa", "value": "fa-brands fa-hashnode" } 
+    },
+    { 
+      "name": "YouTube", 
+      "url": "https://www.youtube.com/@urblockster", 
+      "icon": { "type": "fa", "value": "fa-brands fa-youtube" } 
+    },
+    { 
+      "name": "LinkedIn", 
+      "url": "https://www.linkedin.com/in/par-kumar/", 
+      "icon": { "type": "fa", "value": "fa-brands fa-linkedin" } 
+    },
+    { 
+      "name": "GitHub", 
+      "url": "https://github.com/coreparkumar?tab=repositories", 
+      "icon": { "type": "fa", "value": "fa-brands fa-github" } 
+    },
+    {
+      "name": "Text Only Sample",
+      "url": "https://example.com"
+    }
+  ]
+}
